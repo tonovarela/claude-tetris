@@ -150,3 +150,87 @@ kbd {
 #restart-btn:hover {
   background: #9bbdff;
 }
+
+/* ---- Menú de pausa ---- */
+.pause-box {
+  width: 220px;
+}
+
+.overlay-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #7aa2f7;
+}
+
+.pause-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: stretch;
+  width: 100%;
+}
+
+.pause-view.hidden {
+  display: none;
+}
+
+.pause-view button {
+  background: #22223a;
+  color: #e0e0e0;
+  border: 1px solid #3a3a5a;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.15s;
+}
+
+.pause-view button:hover {
+  background: #2f2f4a;
+}
+
+#resume-btn {
+  background: #7aa2f7;
+  color: #0f0f17;
+}
+
+#resume-btn:hover {
+  background: #9bbdff;
+}
+
+.level-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.level-select select {
+  background: #1a1a25;
+  color: #e0e0e0;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+#pause-controls ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#pause-controls li {
+  font-size: 13px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

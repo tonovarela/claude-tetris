@@ -43,10 +43,53 @@
       </aside>
     </div>
 
+    <div id="start-overlay" class="overlay">
+      <div class="overlay-box">
+        <p id="start-title">TETRIS</p>
+        <div class="records-block">
+          <span class="label">TOP 5</span>
+          <ol id="start-records-list" class="records-list"></ol>
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="label">MEJOR COMBO</span>
+            <span class="value small" id="start-best-combo">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">MÁX. LÍNEAS</span>
+            <span class="value small" id="start-max-lines">0</span>
+          </div>
+        </div>
+        <button id="start-btn">Jugar</button>
+        <button id="reset-records-btn" class="secondary-btn">Resetear récords</button>
+      </div>
+    </div>
+
     <div id="overlay" class="overlay hidden">
       <div class="overlay-box">
         <p id="overlay-title">GAME OVER</p>
         <p id="overlay-score"></p>
+
+        <div id="save-score-row" class="save-score-row hidden">
+          <input id="player-name-input" type="text" maxlength="10" placeholder="Tu nombre" autocomplete="off" />
+          <button id="save-score-btn">Guardar</button>
+        </div>
+
+        <div class="records-block">
+          <span class="label">TOP 5</span>
+          <ol id="overlay-records-list" class="records-list"></ol>
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="label">MEJOR COMBO</span>
+            <span class="value small" id="overlay-best-combo">0</span>
+          </div>
+          <div class="stat">
+            <span class="label">MÁX. LÍNEAS</span>
+            <span class="value small" id="overlay-max-lines">0</span>
+          </div>
+        </div>
+
         <button id="restart-btn">Reiniciar</button>
       </div>
     </div>

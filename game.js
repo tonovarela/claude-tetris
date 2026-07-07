@@ -592,5 +592,6 @@ playerNameInput.addEventListener('keydown', e => {
   if (e.code === 'Enter') saveCurrentScore();
 });
 
+applySkin(currentSkin);
 populateStartLevelSelect();
 renderStartOverlay();

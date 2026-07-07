@@ -13,6 +13,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   user-select: none;
+  transition: background 0.2s;
 }
 
 .wrapper {
@@ -31,6 +32,7 @@ body {
   background: #1a1a25;
   border-radius: 4px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
 }
 
 /* ---- Panel lateral ---- */
@@ -68,6 +70,18 @@ body {
   border: 1px solid #2a2a3a;
   background: #1a1a25;
   border-radius: 4px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+#skin-select {
+  background: #22223a;
+  border: 1px solid #3a3a5a;
+  border-radius: 4px;
+  color: #e0e0e0;
+  font-size: 13px;
+  padding: 6px 8px;
+  font-family: inherit;
+  cursor: pointer;
 }
 
 /* ---- Controles ---- */
